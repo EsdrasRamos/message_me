@@ -9,6 +9,7 @@ require("turbolinks").start()
 require("semantic-ui").start()
 require("@rails/activestorage").start()
 require("channels")
+import "bootstrap"
 
 
 
