@@ -1,2 +1,17 @@
-@import "semantic-ui";
+// @import "semantic-ui";
 @import 'bootstrap/dist/css/bootstrap';
+
+.circle-icon {
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+}
+
+.color {
+    color: rgb(0, 187, 255);
+}
+
+.chatbox {
+    height: 450px ;
+}
