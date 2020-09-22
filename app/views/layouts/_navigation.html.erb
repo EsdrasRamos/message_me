@@ -1,8 +1,6 @@
 <div class="ui mini inverted menu ">
     <div class="ui container">
-        <a class="item">
-            chatroom
-        </a>
+        <%= link_to "Chatroom", root_path, class: "item" %>
         <a class="item">
             Messages
         </a>
@@ -14,7 +12,7 @@
                         Account
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Log in</a>
+                        <%= link_to "Log in", login_path, class: "dropdown-item" %>
                         <a class="dropdown-item" href="#">Log out</a>
                         <a class="dropdown-item" href="#">Sign up</a>
                     </div>
