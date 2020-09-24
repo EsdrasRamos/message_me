@@ -8,20 +8,23 @@
             
             <form class="form-inline ">
                 <div class="nav-item dropdown">
-                    <a class="btn ui primary button  dropdown-toggle py-2 " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="btn ui primary button  dropdown-toggle py-2 " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Account
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <%= link_to "Log in", login_path, class: "dropdown-item" %>
-                        <a class="dropdown-item" href="#">Log out</a>
-                        <a class="dropdown-item" href="#">Sign up</a>
+                        <% if logged_in? %>
+                         <%= link_to "Log out", logout_path,method: :delete, class: "dropdown-item" %>
+                        <% else %> 
+                            <%= link_to "Log in", login_path, class: "dropdown-item" %>
+                        <% end %>
                     </div>
                 </div>
             </form>
-            
-            <div class="item">
-                <div class="ui primary button">Sign Up</div>
-            </div>
+            <% if !logged_in? %>
+                <div class="item">
+                    <%= link_to "Log in", login_path, class: "ui primary button"%>
+                </div>
+            <% end %>
         </div>
     </div>
 </div>
