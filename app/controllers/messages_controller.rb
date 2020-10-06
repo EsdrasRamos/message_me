@@ -16,7 +16,7 @@ class MessagesController < ApplicationController
 end
 
 
- Add actual messages from
-table, Add message partial and refactor
-some code, Start authentication system, Add authentication system - create
-and destroy sessions, Enable flash messages display, Restrict views at controller layer, Add messages from UI
+#  Add actual messages from
+# table, Add message partial and refactor
+# some code, Start authentication system, Add authentication system - create
+# and destroy sessions, Enable flash messages display, Restrict views at controller layer, Add messages from UI
